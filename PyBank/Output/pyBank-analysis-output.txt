@@ -1,12 +1,3 @@
-2019-11-20 01:56:59 PM Launching PyBank-main.py
-  Financial Analysis
-  ----------------------------
-  Total Months: 2
-  Total: $1852539
-  Average Change: $116771.00
-  Greatest Increase in Profits: Feb-2010 ($116771)
-  Greatest Decrease in Profits: Jan-2010 ($0)
-  Bye!
 2019-11-20 01:57:53 PM Launching PyBank-main.py
   Financial Analysis
   ----------------------------
