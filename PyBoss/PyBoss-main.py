@@ -1,5 +1,5 @@
 # Alexis Perumal, 11/20/19
-# UCSD Data Science Bootcamp, HW#3, Part 1, PyBoss (derived from PyPoll)
+# UCSD Data Science Bootcamp, HW#3, Extra Challenges, PyBoss (derived from PyPoll)
 #
 # Assignment:
 #   In this challenge, you get to be the boss. You oversee hundreds of employees across the country developing Tuna 2.0,
