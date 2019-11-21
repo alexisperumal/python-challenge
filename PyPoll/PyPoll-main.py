@@ -82,7 +82,7 @@ def analyzeDataset():
 
     # Read the header row first (skip this step if there is no header)
     csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+    # log.write(f"CSV Header: {csv_header}")
 
     #   You will be give a set of poll data called election_data.csv. The dataset is composed of three columns: Voter ID,
     #   County, and Candidate. Your task is to create a Python script that analyzes the votes and calculates each of the
@@ -97,8 +97,14 @@ def analyzeDataset():
     first_record = next(csvreader)  # [date, profit]
     num_records = 1
 
+    candidates = {}
+
     for record in csvreader:
         num_records += 1
+
+        #Add the vote into the candidate dictionary.
+        candidates.setdefault(record[CANDIDATE_FIELD], 0)
+        candidates[record[CANDIDATE_FIELD]] += 1
 
     # Report the results
     log.write("Election Results")
@@ -106,6 +112,13 @@ def analyzeDataset():
     log.write("Total Votes: %d" % num_records)
     log.write("----------------------------")
 
+    # Print Election results by candidate, sorted by value (descending)
+    for candidate in sorted(candidates.items(), key=lambda kv: (kv[1], kv[0]), reverse=True):
+        log.write(candidate[0] + ": %0.3f%% (%d)" % (float(100.0*candidate[1])/float(num_records), candidate[1]))
+
+    log.write("----------------------------")
+    log.write("Winner: %s" % sorted(candidates.items(), key=lambda kv: (kv[1], kv[0]), reverse=True)[0][0])
+    log.write("----------------------------")
 
     log.write("Bye!")
     log.close()
