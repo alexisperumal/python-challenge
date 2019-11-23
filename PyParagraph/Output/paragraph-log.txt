@@ -1,0 +1,30 @@
+2019-11-22 11:01:51 PM Launching PyParagraph-main.py
+  Input file: ./raw_data/paragraph_1.txt
+  Output log file: ./Output/paragraph-log.txt
+  Paragraph Analysis
+  -----------------
+  Approximate word count: 130
+  Approximate sentence count: 5
+  Approximate letter count (per word): 7.35
+  Approximate sentence length (in words): 26.00
+  
+2019-11-22 11:01:56 PM Launching PyParagraph-main.py
+  Input file: ./raw_data/paragraph_2.txt
+  Output log file: ./Output/paragraph-log.txt
+  Paragraph Analysis
+  -----------------
+  Approximate word count: 283
+  Approximate sentence count: 9
+  Approximate letter count (per word): 6.29
+  Approximate sentence length (in words): 31.44
+  
+2019-11-22 11:03:52 PM Launching PyParagraph-main.py
+  Input file: ./raw_data/paragraph_0.txt
+  Output log file: ./Output/paragraph-log.txt
+  Paragraph Analysis
+  -----------------
+  Approximate word count: 120
+  Approximate sentence count: 5
+  Approximate letter count (per word): 5.54
+  Approximate sentence length (in words): 24.00
+  
